@@ -27,7 +27,6 @@ function App() {
     setMenuPopupOpen(false);
   }
 
-
   return (
     <div className="page">
       <Header

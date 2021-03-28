@@ -18,5 +18,4 @@ const Input = ({ sort, label, onChange, onBlur, value, name, type, placeholder, 
     )
 }
 
-
 export default Input;

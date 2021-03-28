@@ -5,9 +5,7 @@ import React from 'react';
 function CardList
     ({
         children
-
     }) {
-
     // const currentUser = React.useContext(CurrentUserContext);
     return (
         <section className="page__section cardList">

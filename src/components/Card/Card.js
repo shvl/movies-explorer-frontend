@@ -23,7 +23,6 @@ function Card({ isSaved, isLiked, buttonText }) {
             <img src={CardPhoto} alt="Картинка фильма - заглушка" className="card__img" />
             <button className={cardClassName()} type="submit">{buttonText}</button>
         </li >
-
     );
 }
 
