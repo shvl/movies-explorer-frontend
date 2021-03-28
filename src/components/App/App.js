@@ -4,31 +4,44 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
 import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
 import Main from '../Main/Main';
-// import Movies from '../Movies/Movies';
-// import SavedMovies from '../SavedMovies/SavedMovies';
-// import Profile from '../Profile/Profile';
-// import Signin from '../Signin/Signin';
-// import Signup from '../Signup/Signup';
+import Movies from '../Movies/Movies';
+import SavedMovies from '../SavedMovies/SavedMovies';
+import Profile from '../Profile/Profile';
+import Signin from '../Signin/Signin';
+import Signup from '../Signup/Signup';
+import MenuPopup from '../MenuPopup/MenuPopup';
+import NotFound from '../NotFound/NotFound';
 
 import './App.css';
 
 function App() {
+
+  const [isMenuPopupOpen, setMenuPopupOpen] = React.useState(false);
+
+  function openPopup() {
+    setMenuPopupOpen(true);
+  }
+
+  function closePopup() {
+    setMenuPopupOpen(false);
+  }
+
+
   return (
-    <body className="page">
-      <Header />
+    <div className="page">
+      <Header
+        onMenuClick={openPopup}
+      />
 
       <Switch>
         <Route exact path="/">
           <Main />
         </Route>
-      </Switch>
 
-      <Footer />
-      {/*
         <Route path="/movies">
-          <Movies />
+          <Movies
+          />
         </Route>
 
         <Route path="/saved-movies">
@@ -39,19 +52,26 @@ function App() {
           <Profile />
         </Route>
 
-        <Route path="/signin">
-          <Signin />
+        <Route path="*">
+          < NotFound />
         </Route>
 
-        <Route path="/signup">
-          <Signup />
-        </Route>
+      </Switch>
 
-      
+      <Route path="/signin">
+        <Signin />
+      </Route>
 
-      */}
+      <Route path="/signup">
+        <Signup />
+      </Route>
 
-    </body>
+      <MenuPopup
+        isOpen={isMenuPopupOpen}
+        onClose={closePopup}
+      />
+
+    </div>
   );
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import './Portfolio.css';
 
 function Portfolio() {
 
@@ -10,15 +9,15 @@ function Portfolio() {
             <ul className="portfolio__list">
                 <li className="portfolio__item">
                     <p className="portfolio__text">Статичный сайт</p>
-                    <p className="portfolio__arrow" > ↗</p>
+                    <a href="https://svetdmi.github.io/russian-travel/" target="_blank" rel="noreferrer" className="page__link portfolio__arrow"> ↗</a>
                 </li>
                 <li className="portfolio__item">
                     <p className="portfolio__text">Адаптивный сайт </p>
-                    <p className="portfolio__arrow"> ↗</p>
+                    <a href="https://svetdmi.github.io/russian-travel/" target="_blank" rel="noreferrer" className="page__link portfolio__arrow"> ↗</a>
                 </li>
                 <li className="portfolio__item">
                     <p className="portfolio__text">Одностраничное приложение </p>
-                    <p className="portfolio__arrow" > ↗</p>
+                    <a href="https://svetdmi.students.nomoredomains.rocks/" target="_blank" rel="noreferrer" className="page__link portfolio__arrow" > ↗</a>
                 </li>
             </ul>
         </div>

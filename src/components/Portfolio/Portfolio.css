@@ -39,7 +39,7 @@
 
 .portfolio__arrow {
   font-size: 30px;
-  /* line-height: 200%; */
+  font-weight: 400;
   letter-spacing: -0.04em;
 }
 

@@ -1,5 +1,4 @@
 import React from 'react';
-import './Footer.css';
 
 function Footer() {
 
@@ -9,10 +8,12 @@ function Footer() {
             <div className="footer__down">
                 <p className="footer__text"> &#169; 2020 </p>
                 <div className="footer__list">
-                    <p className="footer__text footer__item">Яндекс.Практикум</p>
-                    <p className="footer__text footer__item">Github</p>
-                    <p className="footer__text footer__item">Facebook</p>
-
+                    <a href="https://praktikum.yandex.ru" target="_blank" rel="noreferrer"
+                        className="page__link footer__item">Яндекс.Практикум</a>
+                    <a href="https://www.facebook.com/svedlana" target="_blank" rel="noreferrer"
+                        className="page__link footer__item">Facebook</a>
+                    <a href="https://github.com/SvetDmi" target="_blank" rel="noreferrer"
+                        className="page__link footer__item"> GitHub</a>
                 </div>
             </div>
         </footer>
